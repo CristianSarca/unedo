@@ -1,0 +1,280 @@
+/*=============================================================
+"Theme Solution" for Bootstrap 4
+----------------------------------
+Author: Cristian Sarca
+GitHub: cristiansarca.github.io
+=============================================================*/
+
+// Colors
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #eff2f5 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #c3c4d1 !default;  
+$gray-600: #8590d4 !default;
+$gray-700: #616d8b !default; 
+$gray-800: #464960 !default;
+$gray-900: #3B3E51 !default;
+$black:    #000 !default;
+
+$blue:    #ae6ff5 !default;
+$indigo:  #7771aa !default;
+$purple:  #b964d1 !default;
+$pink:    #ff57a5 !default;
+$red:     #fc5858 !default;
+$orange:  #fd9855 !default;
+$yellow:  #f8c330 !default;
+$green:   #7cca49 !default;
+$teal:    #0fccac !default;
+$cyan:    #15c2e0 !default;
+
+$primary:       $red !default;
+$secondary:     $gray-700 !default;
+$info:          $gray-600 !default;
+$success:       $green !default;
+$warning:       $yellow !default;
+$danger:        $orange !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$enable-shadows: true;
+
+// Body background
+
+$body-bg:                   $white !default;
+$body-color:                $dark !default;
+
+// Link color
+
+$link-color:                $primary !default;
+$link-hover-color:          lighten($link-color, 8%) !default;
+
+$text-muted:                  $gray-500 !default;
+$close-text-shadow:           none !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$headings-font-weight:        500 !default;
+
+// Spacing
+
+$spacer: 1.6rem !default;
+
+//Border radius and others
+
+$border-radius:               .2rem !default;
+$border-radius-lg:            $border-radius !default;
+$border-radius-sm:            $border-radius !default;
+
+$border-color:                $dark !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Merriweather" ,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-size-base:              .9rem !default;
+
+
+// Navbar
+
+$navbar-padding-y:                  ($spacer / 1) !default;
+$navbar-dark-color:                 rgba($white, .9) !default;
+$navbar-dark-toggler-border-color:  rgba($white, .5) !default;
+$navbar-light-color:                rgba($black, .9) !default;
+
+// Cards
+
+$card-border-width:                 1px !default;
+$card-border-radius:                $border-radius !default;
+$card-border-color:                 lighten($secondary, 25%) !default;
+$card-bg:                           $white !default;
+$card-cap-bg:                       lighten($light, 1.5%) !default;
+
+//Tables
+
+$table-bg:                    $gray-200 !default;
+$table-accent-bg:             $light !default;
+$table-hover-bg:              rgba($black, .075) !default;
+$table-active-bg:             lighten($primary, 25%) !default;
+
+$table-border-width:          1px !default;
+$table-border-color:          $gray-800 !default;
+
+$table-head-bg:               $gray-200 !default; 
+$table-head-color:            $gray-200 !default;
+
+$table-dark-bg:               $secondary !default;
+$table-dark-accent-bg:        $secondary !default;
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     $secondary !default; 
+$table-dark-color:            $primary !default;
+
+//Buttons + Forms
+$input-btn-padding-y:         .3rem !default;
+$input-btn-padding-x:         .8rem !default;
+$input-btn-focus-color:       rgba($primary, .25) !default;
+
+$input-btn-focus-width:       0 !default;
+$btn-border-width:            1.5px !default; 
+
+$input-btn-padding-y-lg:      .75rem !default;
+$input-btn-padding-x-lg:      1.15rem !default;
+
+$btn-box-shadow:              none !default;
+$btn-focus-box-shadow:        none !default;
+$btn-active-box-shadow:       none !default;
+
+//Forms
+
+$input-bg:                              $light !default;
+$input-disabled-bg:                     $gray-200 !default;
+
+$input-color:                           $gray-700 !default;
+$input-border-color:                    lighten($secondary, 25%) !default;
+$input-border-width:                    1px !default;
+$input-box-shadow:                      none !default;
+
+$input-focus-border-color:              lighten($secondary, 35%) !default;
+$input-height-border:                   1px !default;
+
+//Input-group
+
+$input-focus-color:                     $gray-800 !default;
+$input-placeholder-color:               $gray-500!default;
+$input-group-addon-bg:                  $light !default;
+$input-group-addon-color:               $gray-600;
+
+//Dropdown
+
+$dropdown-bg:                       $card-bg !default;
+$dropdown-border-color:             lighten($secondary, 25%) !default;
+$dropdown-border-radius:            0 !default;
+$dropdown-border-width:             1px !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-box-shadow:               none !default;
+
+$dropdown-link-color:               $dark !default;
+$dropdown-link-hover-color:         $secondary !default;
+$dropdown-link-hover-bg:            $gray-200 !default;
+
+//Pagination
+
+$pagination-color:                  $secondary !default;
+$pagination-bg:                     $light !default;
+$pagination-active-bg:              $primary !default;
+$pagination-border-width:           1px !default;
+$pagination-border-color:           lighten($secondary, 25%) !default;
+$pagination-disabled-bg:            $light !default;
+$pagination-disabled-color:         darken($card-bg, 15%) !default;
+
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               $secondary !default;
+$pagination-hover-border-color:     $secondary !default;
+
+//Navs
+
+$nav-tabs-border-color:             lighten($secondary, 25%) !default;
+$nav-tabs-border-width:             1px !default;
+$nav-tabs-border-radius:            $border-radius !default;
+$nav-tabs-link-hover-border-color:  lighten($secondary, 25%) lighten($secondary, 25%) $nav-tabs-border-color !default;
+$nav-tabs-link-active-color:        $dark !default;
+$nav-tabs-link-active-bg:           $body-bg !default;
+$nav-tabs-link-active-border-color: $secondary $secondary $nav-tabs-link-active-bg !default;
+
+//Pills
+
+$nav-pills-link-active-bg:          $secondary !default;
+
+// Badges
+
+$badge-padding-y:                   .3em !default;
+$badge-padding-x:                   .9em !default;
+$badge-pill-border-radius:          $border-radius !default;
+
+// Alerts
+
+$alert-border-radius:               $border-radius !default;
+
+//Progress Bars
+
+$progress-height:                   .5rem !default;
+$progress-font-size:                ($font-size-base * .75) !default;
+$progress-bg:                       $gray-200 !default;
+$progress-bar-color:                $light !default;
+$progress-bar-bg:                   $primary !default;
+$progress-box-shadow:               0 0 1px rgba($secondary, 1) !default;
+
+//List group
+
+$list-group-bg:                     $card-bg !default;
+$list-group-border-color:           lighten($secondary, 25%) !default;
+$list-group-border-width:           1px !default;
+$list-group-border-radius:          .1rem !default;
+
+$list-group-hover-bg:               $primary !default;
+$list-group-active-color:           $light !default;
+$list-group-active-bg:              $primary !default;
+$list-group-active-border-color:    lighten($secondary, 25%) !default;
+
+$list-group-action-color:           $secondary !default;
+$list-group-action-hover-color:     $light !default;
+$list-group-action-active-color:    $primary !default;
+
+//Popovers
+
+$popover-bg:                        $dark !default;
+$popover-border-width:              1px !default;
+$popover-border-color:              transparent !default;
+$popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
+
+$popover-header-bg:                 darken($popover-bg, 3%) !default;
+$popover-header-color:              $light !default;
+$popover-header-padding-y:          .9rem !default;
+$popover-header-padding-x:          1rem !default;
+
+$popover-body-color:                $body-color !default;
+$popover-body-padding-y:            $popover-header-padding-y !default;
+$popover-body-padding-x:            $popover-header-padding-x !default;
+
+$popover-arrow-width:               1rem !default;
+$popover-arrow-height:              .5rem !default;
+$popover-arrow-color:               $popover-bg !default;
+
+$popover-border-radius:             .1rem !default;
+$popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
+
+//Tooltip
+$tooltip-border-radius:            .1rem !default;
+
+//Breadcrumb
+
+$breadcrumb-bg:                     $card-bg !default;
+
+// Jumbotron
+
+$jumbotron-bg:                      $light !default;
+
+//Modal
+
+$modal-content-bg:               $light !default;
+$modal-content-border-width:     1px !default;
+
+$modal-content-box-shadow-xs:    none !default;
+$modal-content-box-shadow-sm-up: none !default;
+
+//Checkbox
+$custom-control-indicator-checked-bg:           $primary !default;
+$custom-control-indicator-bg:                   $light !default;
+$custom-control-indicator-disabled-bg:          darken($card-bg, 2%) !default;
+$custom-control-indicator-active-bg:            $light !default;
+
+$custom-checkbox-indicator-border-radius:       .1rem !default;
+$custom-control-indicator-box-shadow:           inset 0 0 1px rgba($black, 1) !default;
+$custom-control-indicator-active-color:         $light !default;
+
+//Code
+$pre-color:                         $pink !default;
+
+

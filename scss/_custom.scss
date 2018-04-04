@@ -1,0 +1,117 @@
+/*=============================================================
+"Theme Solution" for Bootstrap 4
+----------------------------------
+Author: Cristian Sarca
+GitHub: cristiansarca.github.io
+=============================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i');
+
+//NAVBAR
+
+.navbar-primary {
+    .navbar-toggler {
+        color: $navbar-dark-color;
+        border-color: $navbar-dark-toggler-border-color;
+    }
+
+    .navbar-toggler-icon {
+        background-image: $navbar-dark-toggler-icon-bg;
+      }
+}
+
+.navbar-primary.bg-light {
+    .navbar-toggler {
+        color: $navbar-light-color;
+        border-color: $navbar-light-toggler-border-color;
+    }
+
+    .navbar-toggler-icon {
+        background-image: $navbar-light-toggler-icon-bg;
+      }
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+
+
+//BUTTONS
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-variant ($value, $value, lighten($value, 7.5%), lighten($value, 7.5%), lighten($value, 7.5%), lighten($value, 15%));
+        color: $light;
+    }
+}
+
+.btn-light {
+    color: $dark;
+}
+
+
+// Alerts
+@each $color, $value in $theme-colors {
+    .alert-#{$color} {
+      @include alert-variant(theme-color-level($color, -5), theme-color-level($color, 3), theme-color-level($color, 5));
+    }
+  }
+  
+// Tables
+
+  @mixin table-row-variant($state, $background, $text) {
+    .table-#{$state} {
+      &,
+      > th,
+      > td {
+        background-color: $background;
+        color: $text;
+      }
+    }
+}
+
+.table-active,
+.table-active > th,
+.table-active > td {
+  background-color: $primary;
+  color: $light;
+}
+
+@each $color, $value in $theme-colors {
+    @include table-row-variant($color, theme-color-level($color, -6), theme-color-level($color, 5));
+  }
+
+
+//Forms
+
+
+
+.form-control-plaintext {
+    color: color-yiq($body-bg);
+}
+
+//Jumbotron
+.jumbotron {
+    border-radius: .2rem;
+}
+
+.modal-content {
+    border-radius: .2rem;
+}
+
+
+@each $color, $value in $theme-colors {
+    .badge-#{$color} {
+        color: $light;
+    }
+}
+
+.badge-light {
+    color: $secondary;
+}
+
+.popover-header {
+    border-radius: .3rem;
+}
+
+

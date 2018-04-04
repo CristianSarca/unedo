@@ -1,2 +1,2 @@
-# unedo
-Unedo Theme for Bootstrap 4
+# Unedo Theme
+For Bootstrap 4
